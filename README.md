@@ -1,14 +1,14 @@
-# sylas - 批量获取 fofa 数据
+# sylas - 批量获取 fofa 语句
 
 > 根据多个不同地区进行聚合查询以获取更多 fofa 数据量的查询。  
 
 ## 0x00 预置条件
 
-因为是动态爬虫，所以在使用前需要已经拥有 Chrome 浏览器。
+因为使用了 chrome headless 模式进行 api stat 获取，所以在使用前需要已经安装 Chrome/chromium 浏览器。Linux 下安装有问题可以参考 [crawlergo - Trouble Shooting](https://github.com/Qianlitp/crawlergo/blob/master/README_zh-cn.md#trouble-shooting)
 
 ## 0x01 注意事项
 
-一定要确保语法正确，Windows 系统上使用尤其要注意转义的问题，具体可以参见 [Windows 系统的使用问题](https://fofax.xiecat.fun/faq/#windows-%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98)。为保证正确使用，可以先在 [fofax](https://github.com/xiecat/fofax/) 下测试通过，再使用 sylas 查询。
+一定要确保语法正确，不然会卡死，Windows 系统上使用尤其要注意转义的问题，具体可以参见 [Windows 系统的使用问题](https://fofax.xiecat.fun/faq/#windows-%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98)。为保证正确使用，可以先在 [fofax](https://github.com/xiecat/fofax/) 下测试通过，再使用 sylas 查询。
 
 fofa 查询语句尽量少，不要带无关字段。
 
