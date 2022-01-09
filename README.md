@@ -86,7 +86,7 @@ The number of queries in the app="宝塔-Linux控制面板" is  354829
 sylas -q 'app="宝塔-Linux控制面板"' > bts.txt
 ```
 
-查看此文本，大约有56个不同的地区。
+查看此文本，大约有 56 条语句
 
 ```bash
 wc -l bts.txt
