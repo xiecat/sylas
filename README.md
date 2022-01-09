@@ -99,6 +99,11 @@ wc -l bts.txt
 fofax -qf bts.txt -fs 10000 > bts_ip.txt
 ```
 
+下载文件
+```shell
+echo "host,lastupdatetime">apache-solr.csv
+sylas -q 'app="APACHE-Solr"'|fofax -ff "host,lastupdatetime" -fs 10000 >>apache-solr.csv
+```
 ### Windows
 
 Windows 系统对引号不太友好，需要转义。
