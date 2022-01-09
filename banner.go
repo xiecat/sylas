@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 const banner = `
    _____       __          
@@ -13,6 +16,5 @@ const banner = `
 
 // showBanner is used to show the banner to the user
 func showBanner() {
-	fmt.Printf("%s\n", fmt.Sprintf(banner, Version))
-	fmt.Print("\t sylas \n\n")
+	fmt.Fprintf(os.Stderr, "%s\n", fmt.Sprintf(banner, Version))
 }
