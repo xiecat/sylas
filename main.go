@@ -33,6 +33,5 @@ func init() {
 	}
 }
 func main() {
-	showBanner()
 	getResult(fquery)
 }
