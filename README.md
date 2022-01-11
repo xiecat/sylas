@@ -4,7 +4,7 @@
 
 ## 0x00 预置条件
 
-因为使用了 chrome headless 模式进行 api stat 获取，所以在使用前需要已经安装 Chrome/chromium 浏览器。Linux 下安装有问题可以参考 [crawlergo - Trouble Shooting](https://github.com/Qianlitp/crawlergo/blob/master/README_zh-cn.md#trouble-shooting)
+sylas 使用了 chrome headless 模式进行 api stat 获取，在使用前需要安装 Chrome/chromium 浏览器。Linux 下安装有问题可以参考 [crawlergo - Trouble Shooting](https://github.com/Qianlitp/crawlergo/blob/master/README_zh-cn.md#trouble-shooting)
 
 ## 0x01 注意事项
 
