@@ -11,6 +11,8 @@ var (
 	debug      bool
 	fquery     string
 	fwfile     string
+	fofaDomain string
+	fofaSize   int
 	chromePath string
 	Version    = "v0.0.1"
 )
@@ -19,6 +21,8 @@ func init() {
 	flag.BoolVar(&h, "h", false, "show help")
 	flag.BoolVar(&debug, "debug", false, "debug")
 	flag.StringVar(&fquery, "q", "", "fofa query")
+	flag.StringVar(&fofaDomain, "fofa-domain", "fofa.so", "fofa domain")
+	flag.IntVar(&fofaSize, "size", 10000, "fofa query size")
 	flag.StringVar(&chromePath, "p", "", "chrome path")
 	flag.Parse()
 

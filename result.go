@@ -25,7 +25,7 @@ func getResult(query string) {
 	}
 	countries := fofas.Data.Countries
 	for _, v := range countries {
-		if v.Count <= 10000 {
+		if v.Count <= fofaSize {
 			Datas[v.Name] = &Result{
 				Code:  v.Code.String(),
 				Count: v.Count,
@@ -51,7 +51,7 @@ func getResult(query string) {
 		if _, ok := hasCounty[v.Cname]; ok {
 			continue
 		}
-		if v.Value <= 10000 {
+		if v.Value <= fofaSize {
 			Datas[v.Cname] = &Result{
 				Code:  v.Code.String(),
 				Count: v.Value,
@@ -87,8 +87,8 @@ func getResult(query string) {
 			//log.Printf("use : %s,%d\n", v.Code, v.Count)
 			continue
 		}
-		if v.Count > 10000 {
-			results = append(results, Result{Code: v.Code, Count: 10000, Use: true})
+		if v.Count > fofaSize {
+			results = append(results, Result{Code: v.Code, Count: fofaSize, Use: true})
 			v.Use = true
 			continue
 		}
@@ -99,7 +99,7 @@ func getResult(query string) {
 			if k.Use {
 				continue
 			}
-			if k.Count+count <= 10000 {
+			if k.Count+count <= fofaSize {
 				code = fmt.Sprintf("%s||(%s)", code, k.Code)
 				count = count + k.Count
 				k.Use = true

@@ -31,7 +31,7 @@ func getFoFaStat(query string) (result FoFaStatusResp, err error) {
 		switch ev := v.(type) {
 		case *network.EventRequestWillBeSent:
 
-			if strings.Contains(ev.Request.URL, "https://api.fofa.so/v1/search/stats?qbase64=") && ev.Type == "XHR" {
+			if strings.Contains(ev.Request.URL, fmt.Sprintf("https://api.%s/v1/search/stats?qbase64=", fofaDomain)) && ev.Type == "XHR" {
 				if debug {
 					log.Printf("EventRequestWillBeSent: %v: %v\n", ev.RequestID, ev.Request.URL)
 				} else {
@@ -55,7 +55,7 @@ func getFoFaStat(query string) (result FoFaStatusResp, err error) {
 		}
 	})
 	// run task list
-	fofaUrl := fmt.Sprintf(`https://fofa.so/result?qbase64=%s`, qbase)
+	fofaUrl := fmt.Sprintf(`https://%s/result?qbase64=%s`, fofaDomain, qbase)
 	log.Printf("fofa Query URL:%s \n", fofaUrl)
 
 	var res string
