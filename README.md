@@ -59,15 +59,15 @@ sylas -q 'app="宝塔-Linux控制面板"'
 	 sylas
 
 2022/01/09 12:20:52 query:app="宝塔-Linux控制面板",base64:YXBwPSLlrp3loZQtTGludXjmjqfliLbpnaLmnb8i
-2022/01/09 12:20:52 fofa Query URL:https://fofa.so/result?qbase64=YXBwPSLlrp3loZQtTGludXjmjqfliLbpnaLmnb8i
+2022/01/09 12:20:52 fofa Query URL:https://fofa.info/result?qbase64=YXBwPSLlrp3loZQtTGludXjmjqfliLbpnaLmnb8i
 2022/01/09 12:20:56 request fofa query :app="宝塔-Linux控制面板" stat data
 2022/01/09 12:20:56 get fofa query :app="宝塔-Linux控制面板" stat data
 2022/01/09 12:21:04 query:app="宝塔-Linux控制面板" && country="GB",base64:YXBwPSLlrp3loZQtTGludXjmjqfliLbpnaLmnb8iICYmIGNvdW50cnk9IkdCIg==
-2022/01/09 12:21:04 fofa Query URL:https://fofa.so/result?qbase64=YXBwPSLlrp3loZQtTGludXjmjqfliLbpnaLmnb8iICYmIGNvdW50cnk9IkdCIg==
+2022/01/09 12:21:04 fofa Query URL:https://fofa.info/result?qbase64=YXBwPSLlrp3loZQtTGludXjmjqfliLbpnaLmnb8iICYmIGNvdW50cnk9IkdCIg==
 2022/01/09 12:21:06 request fofa query :app="宝塔-Linux控制面板" && country="GB" stat data
 2022/01/09 12:21:06 get fofa query :app="宝塔-Linux控制面板" && country="GB" stat data
 2022/01/09 12:21:07 query:app="宝塔-Linux控制面板" && country="DE",base64:YXBwPSLlrp3loZQtTGludXjmjqfliLbpnaLmnb8iICYmIGNvdW50cnk9IkRFIg==
-2022/01/09 12:21:07 fofa Query URL:https://fofa.so/result?qbase64=YXBwPSLlrp3loZQtTGludXjmjqfliLbpnaLmnb8iICYmIGNvdW50cnk9IkRFIg==
+2022/01/09 12:21:07 fofa Query URL:https://fofa.info/result?qbase64=YXBwPSLlrp3loZQtTGludXjmjqfliLbpnaLmnb8iICYmIGNvdW50cnk9IkRFIg==
 2022/01/09 12:21:09 request fofa query :app="宝塔-Linux控制面板" && country="DE" stat data
 2022/01/09 12:21:11 get fofa query :app="宝塔-Linux控制面板" && country="DE" stat data
 (region="HK" && app="宝塔-Linux控制面板" && region="Sha Tin")||(country="US" && app="宝塔-Linux控制面板" && region="Virginia")||(country="CN" && app="宝塔-Linux控制面板" && region="Shaanxi")||(app="宝塔-Linux控制面板" && country="AE")
