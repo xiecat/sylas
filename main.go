@@ -14,7 +14,7 @@ var (
 	fofaDomain string
 	fofaSize   int
 	chromePath string
-	Version    = "v0.0.1"
+	Version    = "v0.0.5"
 )
 
 func init() {
