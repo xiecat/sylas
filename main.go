@@ -21,7 +21,7 @@ func init() {
 	flag.BoolVar(&h, "h", false, "show help")
 	flag.BoolVar(&debug, "debug", false, "debug")
 	flag.StringVar(&fquery, "q", "", "fofa query")
-	flag.StringVar(&fofaDomain, "fofa-domain", "fofa.info", "fofa domain")
+	flag.StringVar(&fofaDomain, "fofa-domain", "soall.org", "fofa domain")
 	flag.IntVar(&fofaSize, "size", 10000, "fofa query size")
 	flag.StringVar(&chromePath, "p", "", "chrome path")
 	flag.Parse()
