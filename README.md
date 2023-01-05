@@ -28,18 +28,22 @@ sylas -h
   \__ \/ / / / / __  / ___/
  ___/ / /_/ / / /_/ (__  )
 /____/\__, /_/\__,_/____/
-     /____/  0.0.1
+     /____/  0.0.6
 
-	 sylas
-
-Usage of sylas:
+Usage of ./sylas:
   -debug
     	debug
+  -f string
+    	full data (default "false")
+  -fofa-domain string
+    	fofa domain (default "soall.org")
   -h	show help
   -p string
     	chrome path
   -q string
     	fofa query
+  -size int
+    	fofa query size (default 10000)
 ```
 
 ### macOS/Linux
@@ -91,6 +95,12 @@ sylas -q 'app="宝塔-Linux控制面板"' > bts.txt
 ```bash
 wc -l bts.txt
 56 bts.txt
+```
+
+当然还可以开启全量数据拉取，添加-f参数。
+
+```bash
+sylas -f true -q 'app="宝塔-Linux控制面板"' > bts-full.txt
 ```
 
 使用 fofax 进行查询。
