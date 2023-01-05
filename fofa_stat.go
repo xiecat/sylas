@@ -56,7 +56,7 @@ func getFoFaStat(query string) (result FoFaStatusResp, err error) {
 		}
 	})
 	// run task list
-	fofaUrl := fmt.Sprintf(`https://%s/result?qbase64=%s`, fofaDomain, qbase)
+	fofaUrl := fmt.Sprintf(`https://%s/result?qbase64=%s&full=%s`, fofaDomain, qbase, isFull)
 	log.Printf("fofa Query URL:%s \n", fofaUrl)
 
 	var res string

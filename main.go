@@ -10,17 +10,19 @@ var (
 	h          bool
 	debug      bool
 	fquery     string
+	isFull     string
 	fwfile     string
 	fofaDomain string
 	fofaSize   int
 	chromePath string
-	Version    = "v0.0.5"
+	Version    = "v0.0.6"
 )
 
 func init() {
 	flag.BoolVar(&h, "h", false, "show help")
 	flag.BoolVar(&debug, "debug", false, "debug")
 	flag.StringVar(&fquery, "q", "", "fofa query")
+	flag.StringVar(&isFull, "f", "false", "full data")
 	flag.StringVar(&fofaDomain, "fofa-domain", "soall.org", "fofa domain")
 	flag.IntVar(&fofaSize, "size", 10000, "fofa query size")
 	flag.StringVar(&chromePath, "p", "", "chrome path")
